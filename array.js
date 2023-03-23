@@ -49,6 +49,12 @@ function totalArray(array) {
   return total
 }
 
+
+// Rata rata
+function averageArray(array) {
+  return totalArray(array) / array.length
+}
+
 const array = []
 const arrayOdd = []
 const arrayEven = []
@@ -77,3 +83,4 @@ console.log(arrayEven.length)
 console.log(minArray(arrayEven))
 console.log(maxArray(arrayEven))
 console.log(totalArray(arrayEven))
+console.log(averageArray(arrayEven))
