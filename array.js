@@ -22,6 +22,19 @@ function minArray(array) {
   return min
 }
 
+
+// Max dalam array
+function maxArray(array) {
+  let max = array[0]
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i]
+    } 
+  }
+  return max
+}
+
 const array = []
 const arrayOdd = []
 const arrayEven = []
@@ -48,3 +61,4 @@ console.log(arrayOdd.length)
 console.log(arrayEven)
 console.log(arrayEven.length)
 console.log(minArray(arrayEven))
+console.log(maxArray(arrayEven))
