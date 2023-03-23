@@ -27,7 +27,7 @@ for (let i = 0; i < array.length; i++) {
     arrayEven.push(array[i])
   }
 }
-
+  
 console.log(array)
 console.log(array.length)
 console.log(arrayOdd)
