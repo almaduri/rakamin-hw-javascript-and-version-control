@@ -9,6 +9,19 @@ function isOdd(num) {
   return num % 2 === 1
 }
 
+
+// Min dalam array
+function minArray(array) {
+  let min = array[0]
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i]
+    } 
+  }
+  return min
+}
+
 const array = []
 const arrayOdd = []
 const arrayEven = []
@@ -34,3 +47,4 @@ console.log(arrayOdd)
 console.log(arrayOdd.length)
 console.log(arrayEven)
 console.log(arrayEven.length)
+console.log(minArray(arrayEven))
