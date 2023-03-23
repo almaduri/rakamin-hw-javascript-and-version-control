@@ -19,6 +19,7 @@ function minArray(array) {
       min = array[i]
     } 
   }
+
   return min
 }
 
@@ -32,7 +33,20 @@ function maxArray(array) {
       max = array[i]
     } 
   }
+
   return max
+}
+
+
+// Total dalam array
+function totalArray(array) {
+  let total = 0
+
+  for (const num of array) {
+    total += num
+  }
+
+  return total
 }
 
 const array = []
@@ -62,3 +76,4 @@ console.log(arrayEven)
 console.log(arrayEven.length)
 console.log(minArray(arrayEven))
 console.log(maxArray(arrayEven))
+console.log(totalArray(arrayEven))
