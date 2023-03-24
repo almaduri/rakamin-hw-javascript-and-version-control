@@ -72,7 +72,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-const minArrayOdd = minArray(array)
-const maxArrayOdd = maxArray(array)
-const totalArrayOdd = totalArray(array)
-const averageArrayOdd = averageArray(array)
+const minArrayOdd = minArray(arrayOdd)
+const maxArrayOdd = maxArray(arrayOdd)
+const totalArrayOdd = totalArray(arrayOdd)
+const averageArrayOdd = averageArray(arrayOdd)
