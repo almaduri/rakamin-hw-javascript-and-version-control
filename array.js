@@ -69,6 +69,11 @@ function compare(name, valueArrayOdd, valueArrayEven) {
   return result
 }
 
+// Total index dari suatu array
+function totalIndex(array) {
+  return array.length
+}
+
 const array = []
 const arrayOdd = []
 const arrayEven = []
@@ -106,6 +111,8 @@ const minCompared = compare("Min", minArrayOdd, minArrayEven)
 const maxCompared = compare("Max", maxArrayOdd, maxArrayEven)
 const totalCompared = compare("Total", totalArrayOdd, totalArrayEven)
 const averageCompared = compare("Rata rata", averageArrayOdd, averageArrayEven)
+
+
 
 console.log(`Min array ganjil = ${minArrayOdd}, Min array genap = ${minArrayEven}\n${minCompared}\n`)
 console.log(`Max array ganjil = ${maxArrayOdd}, Max array genap = ${maxArrayEven}\n${maxCompared}\n`)
