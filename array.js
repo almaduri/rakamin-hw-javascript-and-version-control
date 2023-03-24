@@ -101,3 +101,13 @@ const maxArrayEven = maxArray(arrayEven)
 const totalArrayEven = totalArray(arrayEven)
 const averageArrayEven = averageArray(arrayEven)
 
+// Perbandingan array ganjil dan genap
+const minCompared = compare("Min", minArrayOdd, minArrayEven)
+const maxCompared = compare("Max", maxArrayOdd, maxArrayEven)
+const totalCompared = compare("Total", totalArrayOdd, totalArrayEven)
+const averageCompared = compare("Rata rata", averageArrayOdd, averageArrayEven)
+
+console.log(`Min array ganjil = ${minArrayOdd}, Min array genap = ${minArrayEven}\n${minCompared}\n`)
+console.log(`Max array ganjil = ${maxArrayOdd}, Max array genap = ${maxArrayEven}\n${maxCompared}\n`)
+console.log(`Total array ganjil = ${totalArrayOdd}, Total array genap = ${totalArrayEven}\n${totalCompared}\n`)
+console.log(`Rata rata array ganjil = ${averageArrayOdd}, Rata rata array genap = ${averageArrayEven}\n${averageCompared}`)
