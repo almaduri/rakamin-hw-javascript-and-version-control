@@ -76,3 +76,8 @@ const minArrayOdd = minArray(arrayOdd)
 const maxArrayOdd = maxArray(arrayOdd)
 const totalArrayOdd = totalArray(arrayOdd)
 const averageArrayOdd = averageArray(arrayOdd)
+
+const minArrayEven = minArray(arrayEven)
+const maxArrayEven = maxArray(arrayEven)
+const totalArrayEven = totalArray(arrayEven)
+const averageArrayEven = averageArray(arrayEven)
