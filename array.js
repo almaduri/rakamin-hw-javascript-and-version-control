@@ -5,12 +5,10 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-
 // Menentukan apakah nilai ganjil 
 function isOdd(num) {
   return num % 2 === 1
 }
-
 
 // Min dalam array
 function minArray(array) {
@@ -25,7 +23,6 @@ function minArray(array) {
   return min
 }
 
-
 // Max dalam array
 function maxArray(array) {
   let max = array[0]
@@ -39,7 +36,6 @@ function maxArray(array) {
   return max
 }
 
-
 // Total dalam array
 function totalArray(array) {
   let total = 0
@@ -51,12 +47,10 @@ function totalArray(array) {
   return total
 }
 
-
 // Rata rata array
 function averageArray(array) {
   return totalArray(array) / array.length
 }
-
 
 const array = []
 const arrayOdd = []
@@ -66,7 +60,6 @@ const arrayEven = []
 for (let i = 1; i <= 100; i++) {
   array.push(getRandomIntInclusive(1, 50))
 }
-
 
 // Perulangan pada array untuk menentukan index ganjil atau genap
 for (let i = 0; i < array.length; i++) {
@@ -79,19 +72,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-
 const minArrayOdd = minArray(array)
-
-
-
-  
-console.log(array)
-console.log(array.length)
-console.log(arrayOdd)
-console.log(arrayOdd.length)
-console.log(arrayEven)
-console.log(arrayEven.length)
-console.log(minArray(arrayEven))
-console.log(maxArray(arrayEven))
-console.log(totalArray(arrayEven))
-console.log(averageArray(arrayEven))
+const maxArrayOdd = maxArray(array)
+const totalArrayOdd = totalArray(array)
+const averageArrayOdd = averageArray(array)
