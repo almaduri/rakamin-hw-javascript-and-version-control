@@ -54,19 +54,19 @@ function averageArray(array) {
 
 // Membandingkan nilai
 function compare(name, valueArrayOdd, valueArrayEven) {
-  let hasil
+  let result
 
   if (valueArrayOdd === valueArrayEven) {
-    hasil = `${name} memiliki nilai sama antara array genap dan ganjil`
+    result = `${name} memiliki nilai sama antara array genap dan ganjil`
   } else if (valueArrayOdd > valueArrayEven) {
-    hasil = `${name} lebih besar array ganjil`
+    result = `${name} lebih besar array ganjil`
   } else if (valueArrayEven > valueArrayOdd) {
-    hasil = `${name} lebih besar array genap`
+    result = `${name} lebih besar array genap`
   } else {
-    hasil = "Nilai tidak valid"
+    result = "Nilai tidak valid"
   }
 
-  return hasil
+  return result
 }
 
 const array = []
