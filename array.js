@@ -10,47 +10,29 @@ function isOdd(num) {
   return num % 2 === 1
 }
 
-// Min dalam array
-function minArray(array) {
+// Menentukan min, max, total, dan rata rata
+function minMaxTotalAverageArray(array) {
   let min = array[0]
+  let max = array[0]
+  let total = 0
+  let average
 
-  for (let i = 1; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] < min) {
       min = array[i]
-    } 
-  }
+    }
 
-  return min
-}
-
-// Max dalam array
-function maxArray(array) {
-  let max = array[0]
-
-  for (let i = 1; i < array.length; i++) {
     if (array[i] > max) {
       max = array[i]
-    } 
+    }
+
+    total += array[i]
   }
 
-  return max
-}
+  average = total / array.length
 
-// Total dalam array
-function totalArray(array) {
-  let total = 0
-
-  for (const num of array) {
-    total += num
-  }
-
-  return total
-}
-
-// Rata rata array
-function averageArray(array) {
-  return totalArray(array) / array.length
-}
+  return [min, max, total, average]
+} 
 
 // Membandingkan nilai
 function compare(name, valueArrayOdd, valueArrayEven) {
@@ -67,11 +49,6 @@ function compare(name, valueArrayOdd, valueArrayEven) {
   }
 
   return result
-}
-
-// Total index dari suatu array
-function totalIndex(array) {
-  return array.length
 }
 
 const array = []
@@ -94,17 +71,9 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-// Nilai array ganjil
-const minArrayOdd = minArray(arrayOdd)
-const maxArrayOdd = maxArray(arrayOdd)
-const totalArrayOdd = totalArray(arrayOdd)
-const averageArrayOdd = averageArray(arrayOdd)
-
-// Nilai array genap
-const minArrayEven = minArray(arrayEven)
-const maxArrayEven = maxArray(arrayEven)
-const totalArrayEven = totalArray(arrayEven)
-const averageArrayEven = averageArray(arrayEven)
+// Inisiasi nilai min, max, total, dan rata rata
+const [minArrayOdd, maxArrayOdd, totalArrayOdd, averageArrayOdd] = minMaxTotalAverageArray(arrayOdd)
+const [minArrayEven, maxArrayEven, totalArrayEven, averageArrayEven] = minMaxTotalAverageArray(arrayEven)
 
 // Perbandingan array ganjil dan genap
 const minCompared = compare("Min", minArrayOdd, minArrayEven)
@@ -112,15 +81,10 @@ const maxCompared = compare("Max", maxArrayOdd, maxArrayEven)
 const totalCompared = compare("Total", totalArrayOdd, totalArrayEven)
 const averageCompared = compare("Rata rata", averageArrayOdd, averageArrayEven)
 
-// Total index array
-const totalIndexArray = totalIndex(array)
-const totalIndexArrayOdd = totalIndex(arrayOdd)
-const totalIndexArrayEven = totalIndex(arrayEven)
-
 // Mencetak array beserta total index
-console.log(`Array = ${array}\nTotal Index = ${array.length}\n`)
-console.log(`Array Ganjil = ${arrayOdd}\nTotal Index = ${arrayOdd.length}\n`)
-console.log(`Array Genap = ${arrayEven}\nTotal Index = ${arrayEven.length}\n`)
+console.log(`Array = ${array}\n`)
+console.log(`Array Ganjil = ${arrayOdd}\n`)
+console.log(`Array Genap = ${arrayEven}\n`)
 
 // Mencetak perbandingan array genap dan ganjil
 console.log(`Min array ganjil = ${minArrayOdd}, Min array genap = ${minArrayEven}\n${minCompared}\n`)
