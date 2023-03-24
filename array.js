@@ -81,7 +81,7 @@ const maxCompared = compare("Max", maxArrayOdd, maxArrayEven)
 const totalCompared = compare("Total", totalArrayOdd, totalArrayEven)
 const averageCompared = compare("Rata rata", averageArrayOdd, averageArrayEven)
 
-// Mencetak array beserta total index
+// Mencetak array
 console.log(`Array = ${array}\n`)
 console.log(`Array Ganjil = ${arrayOdd}\n`)
 console.log(`Array Genap = ${arrayEven}\n`)
