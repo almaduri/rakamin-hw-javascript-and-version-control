@@ -52,6 +52,23 @@ function averageArray(array) {
   return totalArray(array) / array.length
 }
 
+// Membandingkan nilai
+function compare(name, valueArrayOdd, valueArrayEven) {
+  let hasil
+
+  if (valueArrayOdd === valueArrayEven) {
+    hasil = `${name} memiliki nilai sama antara array genap dan ganjil`
+  } else if (valueArrayOdd > valueArrayEven) {
+    hasil = `${name} lebih besar array ganjil`
+  } else if (valueArrayEven > valueArrayOdd) {
+    hasil = `${name} lebih besar array genap`
+  } else {
+    hasil = "Nilai tidak valid"
+  }
+
+  return hasil
+}
+
 const array = []
 const arrayOdd = []
 const arrayEven = []
@@ -72,12 +89,15 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
+// Nilai array ganjil
 const minArrayOdd = minArray(arrayOdd)
 const maxArrayOdd = maxArray(arrayOdd)
 const totalArrayOdd = totalArray(arrayOdd)
 const averageArrayOdd = averageArray(arrayOdd)
 
+// Nilai array genap
 const minArrayEven = minArray(arrayEven)
 const maxArrayEven = maxArray(arrayEven)
 const totalArrayEven = totalArray(arrayEven)
 const averageArrayEven = averageArray(arrayEven)
+
