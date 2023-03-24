@@ -1,3 +1,4 @@
+// Random number antara 2 nilai (inclusive)
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
@@ -5,6 +6,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 
+// Menentukan apakah nilai ganjil 
 function isOdd(num) {
   return num % 2 === 1
 }
@@ -50,10 +52,11 @@ function totalArray(array) {
 }
 
 
-// Rata rata
+// Rata rata array
 function averageArray(array) {
   return totalArray(array) / array.length
 }
+
 
 const array = []
 const arrayOdd = []
@@ -64,6 +67,8 @@ for (let i = 1; i <= 100; i++) {
   array.push(getRandomIntInclusive(1, 50))
 }
 
+
+// Perulangan pada array untuk menentukan index ganjil atau genap
 for (let i = 0; i < array.length; i++) {
   if (isOdd(i)) {
     // Array Ganjil
@@ -73,6 +78,12 @@ for (let i = 0; i < array.length; i++) {
     arrayEven.push(array[i])
   }
 }
+
+
+const minArrayOdd = minArray(array)
+
+
+
   
 console.log(array)
 console.log(array.length)
