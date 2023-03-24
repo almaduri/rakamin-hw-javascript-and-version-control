@@ -117,6 +117,12 @@ const totalIndexArray = totalIndex(array)
 const totalIndexArrayOdd = totalIndex(arrayOdd)
 const totalIndexArrayEven = totalIndex(arrayEven)
 
+// Mencetak array beserta total index
+console.log(`Array = ${array}\nTotal Index = ${array.length}\n`)
+console.log(`Array Ganjil = ${arrayOdd}\nTotal Index = ${arrayOdd.length}\n`)
+console.log(`Array Genap = ${arrayEven}\nTotal Index = ${arrayEven.length}\n`)
+
+// Mencetak perbandingan array genap dan ganjil
 console.log(`Min array ganjil = ${minArrayOdd}, Min array genap = ${minArrayEven}\n${minCompared}\n`)
 console.log(`Max array ganjil = ${maxArrayOdd}, Max array genap = ${maxArrayEven}\n${maxCompared}\n`)
 console.log(`Total array ganjil = ${totalArrayOdd}, Total array genap = ${totalArrayEven}\n${totalCompared}\n`)
