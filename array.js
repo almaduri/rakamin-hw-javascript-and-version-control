@@ -112,7 +112,10 @@ const maxCompared = compare("Max", maxArrayOdd, maxArrayEven)
 const totalCompared = compare("Total", totalArrayOdd, totalArrayEven)
 const averageCompared = compare("Rata rata", averageArrayOdd, averageArrayEven)
 
-
+// Total index array
+const totalIndexArray = totalIndex(array)
+const totalIndexArrayOdd = totalIndex(arrayOdd)
+const totalIndexArrayEven = totalIndex(arrayEven)
 
 console.log(`Min array ganjil = ${minArrayOdd}, Min array genap = ${minArrayEven}\n${minCompared}\n`)
 console.log(`Max array ganjil = ${maxArrayOdd}, Max array genap = ${maxArrayEven}\n${maxCompared}\n`)
